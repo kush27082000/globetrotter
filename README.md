@@ -81,3 +81,31 @@ go run main.go
 
 frontend
 run index.html
+
+
+//git - 
+1. 
+ERROR: Permission to kush27082000/globetrotter.git denied to deploy key
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+    (or)
+remote: Permission to kush27082000/globetrotter.git denied to ksoniAngel.
+fatal: unable to access 'https://github.com/kush27082000/globetrotter.git/': The requested URL returned error: 403
+
+//git remote set-url origin  https://PAT@github.com/username/reponame.git
+after that can do git push
+ 
+
+2. 
+ kushagra.soni@24F-MACABL-1244 globaltrotter % git push --set-upstream origin main
+To https://github.com/kush27082000/globetrotter.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/kush27082000/globetrotter.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+do->  git pull --rebase origin main
+and after that can do git push
