@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globetrotter Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="auth">
+        <h2>Login / Register</h2>
+        <input type="text" id="username" placeholder="Enter username">
+        <button onclick="register()">Register</button>
+        <button onclick="login()">Login</button>
+        <p id="auth-error" style="color: red; display: none;"></p> <!-- ✅ Error message display -->
+    </div>
+
+    <div id="game" style="display: none;">
+        <h2>Globetrotter Challenge</h2>
+        <p><strong>Score:</strong> <span id="score">0</span></p>
+
+        <div id="clue-container">
+            <h3>Clue:</h3>
+            <p id="clue-text"></p>
+            <input type="text" id="answer" placeholder="Your Answer">
+            <button onclick="submitAnswer()">Submit</button>
+            <p id="feedback"></p>
+        </div>
+
+        <button onclick="getClue()">Get New Clue</button>
+        <button onclick="resetScore()">Reset Score</button>
+        <button onclick="inviteFriend()">Challenge a Friend</button>
+
+        <p id="invite-link"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

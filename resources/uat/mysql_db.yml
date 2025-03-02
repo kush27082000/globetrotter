@@ -1,0 +1,18 @@
+mysql_db:
+  server: 127.0.0.1
+  port: 3306
+  name: globetrotter
+  table: globetrotter
+  username: "root"
+  password: "pass@123"
+  jobStatusTable: ""
+  maxOpenConnections: 1
+  maxIdleConnections: 1
+  connectionMaxLifetimeInSeconds: 1000
+  connectionMaxIdleTimeInSeconds: 30
+  rdbmsBatchSize: 2000
+  txnTimeOutInSeconds: 10
+  maxRetryCount: 3
+  dbInsertionRetryInMilliseconds: 1000
+  fetchMarginMaxRetryCount: 3
+  fetchMarginRetryInMilliseconds: 1000
